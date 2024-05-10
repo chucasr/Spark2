@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 import streamlit as st
 import pyperclip
-import openai
+import openai　import OpenAI
 import datetime
 
 
