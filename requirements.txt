@@ -1,2 +1,1 @@
-
-ModuleNotFoundError: No module named 'dotenv'
+python-dotenv==1.0.1
