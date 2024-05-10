@@ -4,10 +4,6 @@ import streamlit as st
 import pyperclip
 import openai
 import datetime
-try:
-    from collections.abc import Iterable
-except ImportError:
-    from collections import Iterable
 
 
 
