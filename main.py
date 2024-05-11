@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 import streamlit as st
-import pyperclip
+#import pyperclip
 import openai
 import datetime
 
@@ -162,7 +162,7 @@ with st.form(key='caption_form'):
         generated_caption += f"\n{st.session_state['session_state']['detail']}" 
         
         # クリップボードに生成された文章をコピー
-        pyperclip.copy(generated_caption)
+        #pyperclip.copy(generated_caption)
 
         # 改行を挿入して読みやすさを向上させる
         generated_caption_lines = generated_caption.split(". ")
