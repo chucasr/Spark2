@@ -4,10 +4,6 @@ import streamlit as st
 import pyperclip
 import openai
 import datetime
-import toml
-
-# TOMLファイルからシークレットを読み込む
-secrets = toml.load("secrets.toml")
 
 # OpenAI APIキーを設定する
 openai.api_key = secrets['openai']['api_key']
