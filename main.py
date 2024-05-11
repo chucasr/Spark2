@@ -4,13 +4,13 @@ import streamlit as st
 import pyperclip
 import openai
 import datetime
+import toml
 
+# TOMLファイルからシークレットを読み込む
+secrets = toml.load("secrets.toml")
 
-# .envファイルから環境変数を読み込む
-load_dotenv()
-
-# 環境変数からOpenAIのAPIキーを取得
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# OpenAI APIキーを設定する
+openai.api_key = secrets['openai']['api_key']
 
 # session_stateを初期化
 if 'description' not in st.session_state:
