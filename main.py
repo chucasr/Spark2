@@ -12,6 +12,7 @@ secrets = toml.load("secrets.toml")
 # OpenAI APIキーを設定する
 openai.api_key = secrets['openai']['api_key']
 
+
 # session_stateを初期化
 if 'description' not in st.session_state:
     st.session_state['description'] = ''
