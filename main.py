@@ -149,7 +149,6 @@ with st.form(key='caption_form'):
         if st.session_state['session_state']['detail']:
             prompt += f" Additionally, {st.session_state['session_state']['detail']}."
 
-        client = OpenAI()
         
         response = openai.beta.assistants.create(  # v1/chat/completionsエンドポイントを使用
            model="gpt-3.5-turbo-1106",  # 推奨されるモデルに変更
