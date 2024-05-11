@@ -6,7 +6,7 @@ import openai
 import datetime
 
 # OpenAI APIキーを設定する
-openai.api_key = secrets['openai']['api_key']
+openai.api_key = st.secrets['openai']['api_key']
 
 
 # session_stateを初期化
